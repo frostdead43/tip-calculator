@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/calculator.css">
+    <script src="assets/js/calculator.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <img class="logo" src="assets/images/splitter-logo.svg" alt="">
+    <div class="container">
+        <div class="container-inner">
+        <div class="configuration">
+            <label for="">Bill</label>
+            <input class="bg" type="text" name="billInput" id="billInput">
+            <label for="">Insert Tip</label>
+            <input type="text" name="tipInput" id="tipInput">
+            <label for="" class="flex">Number of People <span class="zero" id="warnElement">Cant be zero</span></label> 
+            
+            <input class="bgUser" type="text" name="numberInput" id="numberInput">
+
+            <a id="calculateBtnElment" class="calculatebtn" href="#">Calculate</a>
+        </div>
+
+        <div class="result">
+
+            <div class="tipAmount">
+                <h6>Tip Amount</h6>
+                <div class="justify">
+                    <span class="person">/ person</span>
+                    <span class="spanResult" id="tipResult"></span>
+                </div>
+            </div>
+
+            <div class="totalAmount">
+                <h6>Total</h6>
+                <div class="justify">
+                    <span class="person">/ person</span>
+                    <span class="spanResult" id="totalResult"></span>
+                </div>
+            </div>
+
+            
+            <a id="resettBtnElement" class="resetbtn" href="#">Reset</a>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

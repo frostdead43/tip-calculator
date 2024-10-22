@@ -1,0 +1,212 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(197, 228, 231);
+    font-family: "Space Mono", sans-serif;
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .logo {
+    margin-inline: auto;
+    margin-top: 50px;
+  }
+
+  .container {
+    max-width: 375px;
+    margin-inline: auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+    padding: 32px 24px;
+  }
+
+  label  {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    color:rgba(94, 122, 125, 1);
+    display: block;
+  }
+
+  input {
+    color: rgba(0, 71, 75, 1);
+    width: 311px;
+    text-align: right;
+    padding-right: 17px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35.54px;
+    margin-block: 6px 32px;
+    border: 0;
+    
+  }
+
+  .bg {
+    background: url("../images/dollar-icon.svg") rgba(243, 249, 250, 1) no-repeat 20px center;
+  }
+
+  .bgUser {
+    background: url("../images/user-icon.svg") rgba(243, 249, 250, 1) no-repeat 20px center;
+  }
+
+
+  .result {
+    background-color: rgba(0, 71, 75, 1);
+    margin-block: 32px;
+    border-radius: 16px;
+    padding: 37px 22px 24px 24px;
+  }
+
+  h6 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+  }
+
+  .person {
+    color: rgba(127, 157, 159, 1);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.25px;
+  }
+
+  .tipAmount {
+    margin-bottom: 22px;
+  }
+
+  .justify {
+    color: rgba(38, 194, 174, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47.39px;
+    letter-spacing: -0.6666666865348816px;
+  }
+
+
+
+  .calculatebtn {
+    background-color: rgba(38, 194, 174, 1);
+    color: rgba(0, 71, 75, 1);
+    display: inline-block;
+    padding: 9px 32px;
+    margin-left: 24px;
+    margin-top: 32px;
+    width: 281px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.62px;
+    text-align: center;
+    
+   
+  }
+
+  .resetbtn {
+    background-color: rgba(38, 194, 174, 1);
+    color: rgba(0, 71, 75, 1);
+    display: inline-block;
+    padding: 9px 32px;
+    margin-top: 32px;
+    width: 281px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.62px;
+    text-align: center;
+  }
+  .zero {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    display: none;
+    text-align: center;
+    color: rgba(225, 112, 82, 1);
+
+  }
+  .flex {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+  }
+
+  @media (width > 375px) {
+ .container {
+  max-width: 950px; 
+  padding: 48px;
+ }
+ .container-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+.result {
+  display: grid;
+  padding: 40px;
+  align-items: flex-end;
+  height: 417px;
+  width: 413px;
+  margin-block: 0;
+ }
+.resetbtn {
+ grid-row: 2 span;
+ margin-inline: auto;
+ }
+ .configuration {
+  margin-top: 2px;
+ }
+ .justify {
+  font-size: 48px;
+ }
+}
+
+
+
